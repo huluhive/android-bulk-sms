@@ -78,8 +78,8 @@ $(function() {
     } else {
       body.addClass('sidebar-mini');
       body.removeClass('sidebar-show');
-      sidebar_nicescroll.remove();
-      sidebar_nicescroll = null;
+      // sidebar_nicescroll.remove();
+      // sidebar_nicescroll = null;
 
       $('.main-sidebar .sidebar-menu > li').each(function() {
         let me = $(this);
@@ -91,9 +91,10 @@ $(function() {
           me.find('> a').attr('data-toggle', 'tooltip');
           me.find('> a').attr('data-original-title', me.find('> a').text());
           me.find('> a').attr('title', me.find('> a').text());
-          // $("[data-toggle='tooltip']").tooltip({
-          //   placement: 'right',
-          // });
+
+          $("[data-toggle='tooltip']").tooltip({
+            placement: 'right',
+          });
         }
       });
     }
