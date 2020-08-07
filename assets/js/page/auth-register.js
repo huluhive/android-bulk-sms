@@ -1,3 +1,5 @@
 'use strict';
 
-$('.pwstrength').pwstrength();
+$( document ).ready(function() {
+    $('.pwstrength').pwstrength();
+});
